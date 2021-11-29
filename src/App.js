@@ -7,6 +7,7 @@ import Resume from './components/Resume';
 import Projects from './components/Projects';
 import { AnimatePresence } from 'framer-motion'
 import Home from './components/Home';
+import Skills from './Skills';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
   return (
 
     <div className="app">
-      <div className="container app__container">
+      <div className=" app__container">
         <div className="row app__row">
           <div className="col-lg-3">
 
@@ -32,6 +33,9 @@ function App() {
                 </Route>
                 <Route path="/resume">
                   <Resume />
+                </Route>
+                <Route path="/skills">
+                  <Skills></Skills>
                 </Route>
                 <Route path="/projects" component={Projects} />
                 <Route>

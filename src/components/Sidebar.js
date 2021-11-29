@@ -6,7 +6,7 @@ import github from '../assets/icons/github.svg'
 import pin from '../assets/icons/pin.svg'
 import tie from '../assets/icons/tie.svg'
 import mightycoder from '../assets/samiul_islam.jpg'
-import resume from '../assets/resume.pdf'
+import resume from '../assets/Samiul-Islam-resume-frontend-developer-11-27-21.pdf'
 import { motion } from 'framer-motion'
 
 const Sidebar = () => {
@@ -49,7 +49,7 @@ const Sidebar = () => {
             </figure>
             <div className="sidebar__contact">
                 <div className="sidebar__item sidebar__github">
-                    <a href="!#"><img src={github} alt="github" className="sidebar__icon mr-3" />github</a>
+                    <a href="https://github.com/softsamiul" target="_blank"><img src={github} alt="github" className="sidebar__icon mr-3" />github</a>
                 </div>
                 <div className="sidebar__location">
                     <img src={pin} alt="location" className="sidebar__icon mr-3" />

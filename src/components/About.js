@@ -67,10 +67,16 @@ const About = () => {
             exit="exit"
         >
             <h6 className="about__intro">
-                I describe myself as someone who's persistant, a quick learner and loves problem solving by using simple and scalable solutions.
+            Frontend Developer || JavaScript || React || Aspiring Full Stack Developer
+
+            I'm Samiul Islam is a highly motivated individual with a passion for constantly developing skills and growing professionally.
+
+            Pursuing bachelors degree in Computer Science and Engg. from Camellia Institute Of Technology (CIT), Kolkata and also completed diploma engg. in Computer Science And Technology from Dumkal Polytechnic.
+
+            A fast learner, always on the lookout for opportunities.
             </h6>
 
-            
+
         </motion.div>
     );
 };
