@@ -37,27 +37,46 @@ const Sidebar = () => {
         >
             <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
             <div className="sidebar__name">Samiul Islam </div>
-            <div className="sidebar__item sidebar__title">Frontend Developer</div>
+            <div className=" sidebar__title"> Frontend Developer </div>
             <a href={resume} download="resume.pdf">
                 <div className="sidebar__item sidebar__resume">
-                    <img src={tie} alt="resume" className="sidebar__icon" />Download Resume
+                    <i className="fas fa-download sidebar__icon mr-2"></i>Download Resume
                 </div>
             </a>
-            <figure className="sidebar__social-icons my-2">
-                <a href="!#"><img src={facebook} alt="facebook" className="sidebar__icon mr-3" /></a>
-                <a href="!#"><img src={instagram} alt="instagram" className="sidebar__icon" /></a>
-            </figure>
+            
             <div className="sidebar__contact">
-                <div className="sidebar__item sidebar__github">
+                {/* <div className="sidebar__item sidebar__github">
                     <a href="https://github.com/softsamiul" target="_blank"><img src={github} alt="github" className="sidebar__icon mr-3" />github</a>
-                </div>
+                </div> */}
                 <div className="sidebar__location">
-                    <img src={pin} alt="location" className="sidebar__icon mr-3" />
-                    Kolkata, India</div>
-                <div className="sidebar__item">softsamiul@gmail.com</div>
-                <div className="sidebar__item">+91 7478803500</div>
+                    <i class="fas fa-map-marker-alt sidebar__icon mr-2 "></i>
+                    Kolkata, India
+                </div>
+                <div className="sidebar__item">
+                    <i class="fas fa-envelope-open sidebar__icon mr-2"></i>
+                    softsamiul@gmail.com
+                </div>
+                <div className="sidebar__item">
+                    <i class="fas fa-phone-square sidebar__icon mr-2"></i>
+                    +91 7478803500
+                </div>
+                {/* <div className="sidebar__item">
+                    <i class="fas fa-phone-square sidebar__icon mr-2"></i>
+                    +91 9933059368
+                </div> */}
             </div>
-            <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>email me</div>
+            <figure className="sidebar__social-icons my-2">
+                <a href="https://www.linkedin.com/in/softsamiul/" target="_blank" >
+                    <i class="fab fa-linkedin mr-3" style={{color:"#0A66C2"}}></i>
+                </a>
+                <a href="https://github.com/softsamiul" target="_blank">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </figure>
+
+            {/* <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>email me</div> */}
+
+            <button className=" sidebar__email" onClick={handleEmailMe}>Contact Me</button>
         </motion.div>
     )
 }

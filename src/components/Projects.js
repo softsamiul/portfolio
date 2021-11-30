@@ -64,6 +64,14 @@ const Projects = () => {
                 }
 
             </div>
+            <div className="row">
+
+                {
+                    projects.map(project =>
+                        <ProjectCard key={project.name} project={project} />)
+                }
+
+            </div>
         </motion.div>
     );
 };

@@ -66,7 +66,11 @@ const About = () => {
             animate="visible"
             exit="exit"
         >
-            <h6 className="about__intro">
+            {/* Who am I */}
+            <div className="who-am-i">
+                <h4 style={{fontWeight:"bold"}}>Who Am I</h4>
+            </div>
+            <p className="about__intro">
             Frontend Developer || JavaScript || React || Aspiring Full Stack Developer
 
             I'm Samiul Islam is a highly motivated individual with a passion for constantly developing skills and growing professionally.
@@ -74,9 +78,16 @@ const About = () => {
             Pursuing bachelors degree in Computer Science and Engg. from Camellia Institute Of Technology (CIT), Kolkata and also completed diploma engg. in Computer Science And Technology from Dumkal Polytechnic.
 
             A fast learner, always on the lookout for opportunities.
-            </h6>
+            </p>
+            <p className="about__intro">
+            Frontend Developer || JavaScript || React || Aspiring Full Stack Developer
 
+            I'm Samiul Islam is a highly motivated individual with a passion for constantly developing skills and growing professionally.
 
+            Pursuing bachelors degree in Computer Science and Engg. from Camellia Institute Of Technology (CIT), Kolkata and also completed diploma engg. in Computer Science And Technology from Dumkal Polytechnic.
+
+            A fast learner, always on the lookout for opportunities.
+            </p>
         </motion.div>
     );
 };

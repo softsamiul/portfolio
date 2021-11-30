@@ -32,16 +32,7 @@ const data_projects = [
         deployed_url: 'https://edumaster.netlify.app/',
         github_url: 'https://github.com/softsamiul/edumaster',
         category: ['node.js', 'react.js', 'react']
-    },
-
-    
-
-
-  
-
-   
-
-    
+    },    
 ]
 
 export default data_projects;

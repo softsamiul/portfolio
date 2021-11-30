@@ -10,13 +10,17 @@ const Navbar = () => {
         let currentURL = window.location.href
         console.log(currentURL);
         if (currentURL.endsWith('/'))
-            setActive('About');
+            setActive('Home');
+        else if (currentURL.endsWith('/about'))
+            setActive('About')
         else if (currentURL.endsWith('/projects'))
             setActive('Projects')
         else if (currentURL.endsWith('/resume'))
             setActive('Resume')
         else if (currentURL.endsWith('/skills'))
             setActive('skills')
+        else if (currentURL.endsWith('/blogs'))
+            setActive('Blogs')
 
     }, [active])
 
@@ -46,25 +50,34 @@ const Navbar = () => {
             </div>
 
             <div className="navbar__items">
+                {active !== 'Home' &&
+                    <Link to="/home">
+                        <div className="navbar__item" onClick={() => setActive('Home')}>Home</div>
+                    </Link>
+                }
                 {active !== 'About' &&
-                    <Link to="/">
+                    <Link to="/about">
                         <div className="navbar__item" onClick={() => setActive('About')}>About</div>
                     </Link>
                 }
                 {active !== 'Skills' &&
                     <Link to="/skills">
-                        <div className="navbar__item" onClick={() => setActive('skills')}>Skills</div>
+                        <div className="navbar__item" onClick={() => setActive('Skills')}>Skills</div>
                     </Link>
                 }
-                {active !== 'Resume' ?
+                {active !== 'Resume' &&
                     <Link to="/resume">
                         <div className="navbar__item" onClick={() => setActive('Resume')}>Resume</div>
-                    </Link> : null
+                    </Link>
                 }
-
                 {active !== 'Projects' &&
                     <Link to="/projects">
                         <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>
+                    </Link>
+                }
+                {active !== 'Blogs' &&
+                    <Link to="/blogs">
+                        <div className="navbar__item" onClick={() => setActive('Blogs')}>Blogs</div>
                     </Link>
                 }
             </div>
